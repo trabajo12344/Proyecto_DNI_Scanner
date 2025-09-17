@@ -1,6 +1,6 @@
-//crud.py
+
 from sqlalchemy.orm import Session
-from . import models
+import models
 
 def get_personas(db: Session):
     return db.query(models.Persona).all()

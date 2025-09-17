@@ -1,11 +1,12 @@
-//main.py
+
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from datetime import date
 
-from . import models, crud
-from .database import engine, SessionLocal, Base
+import crud
+import models
+from database import engine, SessionLocal, Base
 
 # Crear tablas en MariaDB
 Base.metadata.create_all(bind=engine)

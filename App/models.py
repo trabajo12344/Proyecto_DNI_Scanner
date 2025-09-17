@@ -1,6 +1,6 @@
-//models.py
+
 from sqlalchemy import Column, Integer, String, Date
-from .database import Base
+from database import Base
 
 class Persona(Base):
     __tablename__ = "personas"
